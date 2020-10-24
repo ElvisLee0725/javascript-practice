@@ -35,7 +35,7 @@ var validIPAddress = function(IP) {
                     return "Neither";
                 }
             }
-            if(parseInt(ip, 10) < 0 || parseInt(ip, 10) > 255) {
+            if(+ip > 255) {
                 return "Neither";
             }
         }
