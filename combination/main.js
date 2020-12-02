@@ -19,5 +19,6 @@ function combinations(k, n) {
 	for(let i = k; i > 1; i--) {
 		numerator *= i;
 	}
-	return Math.trunc(denominator / numerator);
+    return Math.trunc(denominator / numerator);
+
 }
