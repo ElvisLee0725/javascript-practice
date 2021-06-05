@@ -1,0 +1,15 @@
+.star-area li {
+  font-size: 1.5rem;
+  color: grey;
+  display: inline-block;
+}
+
+.star-area:hover li {
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.star-area li:hover ~ li {
+  font-size: 1.5rem;
+  color: grey;
+}
