@@ -1,6 +1,6 @@
 const expect = (result) => {
   return {
-    toBe: function(expected) {
+    toBe(expected) {
       if(result !== expected) {
         throw new Error(`Expected ${expected} but got ${result} instead`);
       }
@@ -9,6 +9,8 @@ const expect = (result) => {
 }
 
 const sum = (a, b) => a + b;
+
+const multiply = (a, b) => a * b;
 
 const test = (title, callback) => {
   try {
@@ -21,6 +23,10 @@ const test = (title, callback) => {
 
 test("Should add up two numbers", () => {
   expect(sum(2, 3)).toBe(5);
+});
+
+test("Should multiply two numbers", () => {
+  expect(multiply(5, 6)).toBe(30);
 });
 
 
